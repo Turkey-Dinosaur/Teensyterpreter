@@ -40,8 +40,8 @@ void parseNet()
         net_info[(i*5)+2] = hex[ip[i]/16];
         net_info[(i*5)+3] = hex[ip[i]%16];
     }
-    net_info[37] = hex[(port / 256) / 16];
-    net_info[38] = hex[(port / 256) % 16];
+    net_info[37] = hex[(port % 256) / 16];
+    net_info[38] = hex[(port % 256) % 16];
     net_info[42] = hex[(port % 256) / 16];
     net_info[43] = hex[(port % 256) % 16];
 }
