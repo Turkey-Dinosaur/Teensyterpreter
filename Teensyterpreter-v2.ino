@@ -15,7 +15,9 @@ void setup()
     digitalWrite(ledPin, HIGH);
     delay(500);
     digitalWrite(ledPin, LOW);
-
+    //Convert IP and port to hexadecimal, and embed them into net_info
+    parseNet() 
+    
     // Wait for drivers to install.
     hurryUp();
 
